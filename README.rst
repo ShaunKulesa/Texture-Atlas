@@ -13,3 +13,12 @@ Example
     atlas = Atlas(1000, 1000)
     atlas.add_textures([['image1.png', 100, 100], ['image2.png', 200, 200], ['image3.png', 100, 100]])
     atlas.save_as("atlas.png")
+
+Atlas
+-----
+
+* add_texture(image_path, width, height):
+    Keyword:
+       * image_path: string
+       * width: integer
+       * height: integer
