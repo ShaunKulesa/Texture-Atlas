@@ -45,9 +45,10 @@ class Atlas():
     
     def get_texture_position(self, image_path: str):
         '''Returns a list of a texture's x, y, width and height.'''
+        return self.textures[image_path]
     
     def all_texture_positions(self):
-        '''Returns a dictionary of all the textures and their positions'''
+        '''Returns a dictionary of all the textures and their positions.'''
         return self.textures
     
     def save_as(self, output_name: str):
@@ -55,8 +56,12 @@ class Atlas():
         self.atlas.save(output_name)
     
     def get_pillow_output(self):
-        '''returns the atlas image in the form of PIL.Image'''
+        '''returns the atlas image in the form of PIL.Image.'''
         return self.atlas
+    
+    def get_size(self):
+        '''Returns a list of the width and height of the atlas.'''
+        return [self.width, self.height]
 
     def clear(self):
         '''Clears all images from the atlas'''

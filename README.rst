@@ -17,8 +17,7 @@ Example
 Atlas
 -----
 
-* add_texture(image_path, width, height):
-    Keyword:
-       * image_path: string
-       * width: integer
-       * height: integer
+* add_texture(image_path, width, height)
+    | image_path: string
+    | width: integer
+    | height: integer

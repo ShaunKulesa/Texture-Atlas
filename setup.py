@@ -1,20 +1,25 @@
 from setuptools import setup
 
+with open("README.rst") as file:
+    readme = file.read()
+
 setup(
-  name = 'Texture_Atlas',         # How you named your package folder (MyLib)
-  packages = ['TextureAtlas'],   # Chose the same as "name"
-  version = '0.1.9',
+  name = 'Texture_Atlas',
+  packages = ['TextureAtlas'],
+  version = '0.2.6',
   license='MIT',
   description = 'Create a texture dynamic texture atlas you can constantly change.',
   author = 'Shaun Kulesa',
   author_email = 'shaunkulesa@gmail.com',
-  url = 'https://github.com/ShaunKulesa/Texture-Atlas',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/ShaunKulesa/Texture-Atlas/blob/main/Texture_Atlas-0.1.5.tar.gz',    # I explain this later on
+  url = 'https://github.com/ShaunKulesa/Texture-Atlas',
+  download_url = 'https://github.com/ShaunKulesa/Texture-Atlas',
   keywords = ['Texture Atlas'],
   install_requires=[
           'pillow',
           'rectpack',
       ],
+  
+  long_description = readme,
   classifiers=[
     'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
@@ -22,5 +27,9 @@ setup(
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.5',
   ],
 )
