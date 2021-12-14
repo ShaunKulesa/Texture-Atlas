@@ -29,7 +29,7 @@ Atlas
     
 * remove_texture(image_path):
     | Removes a specific texture from the texture atlas.
-    * image_path: 
+    * image_path: string
 
 * remove_textures(textures: list)
     * not made yet
@@ -41,12 +41,25 @@ Atlas
 
 * resize(width, height):
     | Resizes the texture atlas.
-    * width: int 
-    * height: int
+    * width: integer
+    * height: integer
     
 * get_texture_position(image_path)
     | Returns a list of a texture's x, y, width and height.
-    * image_path: str
+    * image_path: string
     
 * all_texture_positions():
     | Returns a dictionary of all the textures and their positions.
+
+* save_as(output_name):
+    | Saves the texture atlas as an image file.
+    * output_name: string
+
+* get_pillow_output():
+    | Returns the texture atlas in the form of PIL.Image.
+
+* get_size():
+    | Returns a list of the width and height of the texture atlas.
+
+* clear():
+    | Clears all textures from the texture atlas
