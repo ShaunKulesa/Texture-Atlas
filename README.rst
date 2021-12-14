@@ -1,3 +1,7 @@
+PYPI
+----
+https://pypi.org/project/Texture-Atlas
+
 Install
 -------
 .. code-block:: py
