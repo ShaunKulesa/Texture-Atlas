@@ -18,10 +18,17 @@ Atlas
 -----
 
 * add_texture(image_path, width, height)
-    * image_path: string
-    * width: integer
-    * height: integer
+    | image_path: string
+    | width: integer
+    | height: integer
 
 * def add_textures(self, images):
-    * images: list 
-        | [['1.png', 100, 100], ['2.png', 200, 200]]
+    | images: [[path: string, width: integer, height: integer]]
+    
+* remove_texture(self, image_path):
+    | image_path: string
+
+* resize_texture(self, image_path, width, height)
+    | image_path: string
+    | width: integer 
+    | height: integer
