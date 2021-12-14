@@ -31,8 +31,9 @@ Atlas
     | Removes a specific texture from the texture atlas.
     * image_path: string
 
-* remove_textures(textures: list)
-    * not made yet
+* remove_textures(textures)
+    | Removes multiple specific textures from the texture atlas.
+    * textures: [texture_name: string]
 
 * resize_texture(image_path, width, height)
     * image_path: string
@@ -62,4 +63,4 @@ Atlas
     | Returns a list of the width and height of the texture atlas.
 
 * clear():
-    | Clears all textures from the texture atlas
+    | Clears all textures from the texture atlas.
