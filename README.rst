@@ -18,17 +18,35 @@ Atlas
 -----
 
 * add_texture(image_path, width, height)
-    | image_path: string
-    | width: integer
-    | height: integer
+    | Adds a texture to the texture atlas.
+    * image_path: string
+    * width: integer
+    * height: integer
 
-* def add_textures(self, images):
-    | images: [[path: string, width: integer, height: integer]]
+* def add_textures(images):
+    | Adds multiple textures to the texture atlas.
+    * images: [[path: string, width: integer, height: integer]]
     
-* remove_texture(self, image_path):
-    | image_path: string
+* remove_texture(image_path):
+    | Removes a specific texture from the texture atlas.
+    * image_path: 
 
-* resize_texture(self, image_path, width, height)
-    | image_path: string
-    | width: integer 
-    | height: integer
+* remove_textures(textures: list)
+    * not made yet
+
+* resize_texture(image_path, width, height)
+    * image_path: string
+    * width: integer 
+    * height: integer
+
+* resize(width, height):
+    | Resizes the texture atlas.
+    * width: int 
+    * height: int
+    
+* get_texture_position(image_path)
+    | Returns a list of a texture's x, y, width and height.
+    * image_path: str
+    
+* all_texture_positions():
+    | Returns a dictionary of all the textures and their positions.
