@@ -36,6 +36,7 @@ Atlas
     * textures: [texture_name: string]
 
 * resize_texture(image_path, width, height)
+    | Resizes a specific texture in the texture atlas.
     * image_path: string
     * width: integer 
     * height: integer
