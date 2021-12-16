@@ -14,6 +14,12 @@ Example
     atlas.add_textures([['image1.png', 100, 100], ['image2.png', 200, 200], ['image3.png', 100, 100]])
     atlas.save_as("atlas.png")
 
+=============
+Documentation
+=============
+
+https://shaunkulesa.github.io/Texture-Atlas/
+
 =====
 Atlas
 =====
