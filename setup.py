@@ -6,7 +6,7 @@ with open("README.rst") as file:
 setup(
   name = 'Texture_Atlas',
   packages = ['Texture_Atlas'],
-  version = '0.3.1',
+  version = '0.3.2',
   license='MIT',
   description = 'Create a texture dynamic texture atlas you can constantly change.',
   author = 'Shaun Kulesa',
