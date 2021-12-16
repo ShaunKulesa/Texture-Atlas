@@ -5,8 +5,8 @@ with open("README.rst") as file:
 
 setup(
   name = 'Texture_Atlas',
-  packages = ['TextureAtlas'],
-  version = '0.2.6',
+  packages = ['Texture_Atlas'],
+  version = '0.3.1',
   license='MIT',
   description = 'Create a texture dynamic texture atlas you can constantly change.',
   author = 'Shaun Kulesa',
@@ -18,7 +18,6 @@ setup(
           'pillow',
           'rectpack',
       ],
-  
   long_description = readme,
   classifiers=[
     'Development Status :: 5 - Production/Stable',

@@ -1,6 +1,8 @@
 from PIL import Image
 from rectpack import newPacker, SORT_NONE
 
+import Texture_Atlas
+
 class Atlas():
     def __init__(self, width: int, height: int):
         self.width = width
@@ -43,6 +45,9 @@ class Atlas():
         Removes multiple specific textures from the texture atlas.
             * textures: [texture_name: string]
         '''
+
+        for texture in textures:
+            self.textures.pop(texture, None)
     
     def resize_texture(self, image_path: str, width: int, height: int):
         '''
@@ -127,13 +132,10 @@ class Atlas():
 
         packer.pack()
 
-        output = []
-
         dict_index = 0
         texture_index = 0
 
-        for index, abin in enumerate(packer):
-            bw, bh  = abin.width, abin.height
+        for _, abin in enumerate(packer):
             for rect in abin:
                 x, y, w, h = rect.x, rect.y, rect.width, rect.height
                 for texture in self.textures:
@@ -142,6 +144,7 @@ class Atlas():
                         image = Image.open(texture)
                         image = image.resize((self.textures[texture][2], self.textures[texture][3]))
                         self.atlas.paste(image, (self.textures[texture][0], self.textures[texture][1]))
+                        image.close()
                         dict_index = 0
                         break
                     dict_index += 1
